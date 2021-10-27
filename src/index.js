@@ -14,7 +14,7 @@ const router = Router({ base: '/forms' })
 router.post(
   '/contact',
   validate(contactValidate),
-  // sheets(GOOGLE_SHEET_CONTACT_ID),
+  sheets(GOOGLE_SHEET_CONTACT_ID),
   email(ContactAdminEmail),
   req => JsonResponse({ message: 'sent' }, 200, req),
 )
