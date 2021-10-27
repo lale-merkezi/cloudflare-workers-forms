@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "lalemerkezi-cloudflare-worker",
+  "version": "1.0.0",
+  "description": "A worker for processing forms on lalemerkezi.com",
+  "main": "src/index.js",
+  "scripts": {
+    "predev": "node src/scripts/compile.js",
+    "predeploy": "node src/scripts/compile.js",
+    "prebuild": "node src/scripts/compile.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler publish",
+    "build": "wrangler build",
+    "compile": "node src/scripts/compile.js",
+    "format": "prettier --write '**/*.{js,css,json,md}'"
+  },
+  "author": "Clay Harmon <clay@clayharmon.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "ajv": "^8.6.2",
+    "ajv-formats": "^2.1.1",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "@sagi.io/workers-jwt": "^0.0.20",
+    "itty-router": "^2.4.2",
+    "libphonenumber-js": "^1.9.25"
+  }
+}

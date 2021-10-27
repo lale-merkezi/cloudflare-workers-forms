@@ -1,0 +1,11 @@
+name = "forms"
+type = "webpack"
+
+account_id = "8b2a4f7e97a33f67d499741cd8da432c"
+workers_dev = true
+route = ""
+zone_id = ""
+
+kv_namespaces = [ 
+  { binding = "GOOGLE", preview_id = "1fa3d908f2f84aca86008ff68e10a01d", id = "f14d6f723b3841a9ba52b85dd2ce0f38" }
+]
