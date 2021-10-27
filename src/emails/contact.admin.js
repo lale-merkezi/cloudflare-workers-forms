@@ -8,7 +8,7 @@ const ContactAdminEmail = fields => {
   }
   return {
     to: FORMS_ADMIN_CONTACT_TO,
-    emailTemplateId: 'd-2d25f6acb85848e8a91916c0f7487566',
+    emailTemplateId: 'd-10af7e1823664898aad662d0f641ab74',
     emailTemplateData: {
       items,
       subject: 'New contact from lalemerkezi.com',
