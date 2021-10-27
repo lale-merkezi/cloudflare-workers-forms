@@ -22,7 +22,10 @@ module.exports.default = {
     gdpr: {
       const: true,
     },
+    lang: {
+      enum: ['en', 'tr', 'ar'],
+    },
   },
-  required: ['fname', 'lname', 'phone', 'gdpr'],
+  required: ['fname', 'lname', 'phone', 'gdpr', 'lang'],
   additionalProperties: false,
 }
